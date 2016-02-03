@@ -215,7 +215,9 @@ public class MainActivity extends AppCompatActivity
     }
 
     public static final String TAG = "TAG NAME";
-
+    /*
+        excel create writable
+     */
     public WritableWorkbook createWorkbook(String fileName) {
         //exports must use a temp file while writing to avoid memory hogging
         WorkbookSettings wbSettings = new WorkbookSettings();
@@ -244,12 +246,16 @@ public class MainActivity extends AppCompatActivity
 
         return wb;
     }
-
+    /*
+    excel create sheet
+     */
     public WritableSheet createSheet(WritableWorkbook wb, String sheetName, int sheetIndex) {
         return wb.createSheet(sheetName, sheetIndex);
 
     }
-
+    /*
+        excel edit cell
+     */
     public void writeCell(int columnPosition, int rowPosition, String contents, boolean headerCell, WritableSheet sheet) throws RowsExceededException, WriteException {
         Label newCell = new Label(columnPosition, rowPosition, contents);
         if (headerCell) {
