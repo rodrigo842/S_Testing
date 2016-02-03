@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity
     EditText editTextEmail, editTextSubject, editTextMessage;
     Button btnSend, btnAttachment;
     String email, subject, message, attachmentFile;
-    Uri URI = null=;
+    Uri URI = null;
     FloatingActionButton fab;
 
     private static final int PICK_FROM_GALLERY = 101;
