@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity
                 else{
                     editText.setVisibility(View.VISIBLE);
                     button.setVisibility(View.VISIBLE);
-                    startActivity(new Intent(MainActivity.this, SendXl.class));
+                    //startActivity(new Intent(MainActivity.this, SendXl.class));
                     editSubject.setVisibility(View.VISIBLE);
                 }
             }}
