@@ -28,8 +28,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:padding="5dp"
-        tools:context=".MainActivity"
-        android:visibility="invisible">
+        android:visibility="gone"
+        tools:context=".MainActivity">
 
         <RelativeLayout
             android:layout_width="match_parent"
